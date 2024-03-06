@@ -9,4 +9,29 @@ public class UserController {
     public String homepage(){
         return "index";
     }
+
+    @GetMapping("/about")
+    public String aboutpage(){
+        return "about";
+    }
+
+    @GetMapping("/courses")
+    public String coursespage(){
+        return "courses";
+    }
+
+    @GetMapping("/project")
+    public String projectpage(){
+        return "form";
+    }
+
+    @GetMapping("/services")
+    public String servicespage(){
+        return "services";
+    }
+
+    @GetMapping("/contact")
+    public String contactpage(){
+        return "contact";
+    }
 }
