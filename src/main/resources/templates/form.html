@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -59,37 +59,47 @@
           <div class="card">
             <div class="card-body">
               <h3 class="text-center">EDUMISSION SCHOLARSHIP EXAM APPLICATION FORM</h3>
-    <form>
+              <!-- Alart-->
+              <div th:if="${session.message}" th:classappend="${session.message}" 
+              class="alert alert-success" role="alert" >
+                <p th:text="${session.message}"></p>
+              <!--  <th:block th:text="${#session.removeAttribute('message')}"></th:block>  -->
+            </div>
+            
+
+    <!-- Form entry-->          
+    <form th:action="@{/register}" th:object="${user}" method="post">
       <div class="form-group">
         <label for="exampleFormControlInput1">NAME (IN BLOCK LETTER)</label>
-        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="full name">
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="fname" placeholder="full name">
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput2">GUARDIAN’S NAME</label>
-        <input type="gname" class="form-control" id="exampleFormControlInput2" placeholder="full name">
+        <input type="text" class="form-control" id="exampleFormControlInput2" name="gname" placeholder="full name">
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput3">DATE OF BIRTH</label>
-        <input type="dob" class="form-control" id="exampleFormControlInput3" placeholder="dd/mm/yyyy">
-      </div>
+        <label for="dob">Date of Birth</label>
+        <input type="date" class="form-control" id="dob" name="dob">
+    </div>
       <div class="form-group">
         <label for="exampleFormControlSelect1">GENDER</label>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="exampleFormControlSelect1" name="gender">
           <option>Male</option>
           <option>Female</option>
+          <option>Other</option>
         </select>
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput4">ADDRESS</label>
-        <input type="address" class="form-control" id="exampleFormControlInput4" placeholder="parmanent address">
+        <input type="address" class="form-control" id="exampleFormControlInput4" name="address" placeholder="parmanent address">
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput5">SCHOOL NAME</label>
-        <input type="school" class="form-control" id="exampleFormControlInput5" placeholder="name of your school">
+        <input type="school" class="form-control" id="exampleFormControlInput5" name="school" placeholder="name of your school">
       </div>
       <div class="form-group">
         <label for="exampleFormControlSelect2">CLASS</label>
-        <select class="form-control" id="exampleFormControlSelect2">
+        <select class="form-control" id="exampleFormControlSelect2" name="classs">
           <option>Class 5</option>
           <option>Class 6</option>
           <option>Class 7</option>
@@ -99,15 +109,15 @@
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput6">ROLL No.</label>
-        <input type="school" class="form-control" id="exampleFormControlInput6" placeholder="Roll number">
+        <input type="roll" class="form-control" id="exampleFormControlInput6" name="roll" placeholder="Roll number">
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput7">SECTION</label>
-        <input type="school" class="form-control" id="exampleFormControlInput7" placeholder="section">
+        <input type="section" class="form-control" id="exampleFormControlInput7" name="section" placeholder="section">
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput8">WatsApp Number</label>
-        <input type="school" class="form-control" id="exampleFormControlInput8" placeholder="olny 10 digit">
+        <input type="wnumber" class="form-control" id="exampleFormControlInput8" name="wnumber" placeholder="olny 10 digit">
       </div>
       <h5> Read The Instruction Carefully </h5>
       <h6>  1. Registration Fees for Exam is ₹50. <br>
