@@ -24,19 +24,29 @@ public class UserController {
         return "about";
     }
 
-    @GetMapping("/courses")
+    @GetMapping("/admission")
     public String coursespage(){
-        return "courses";
+        return "admission";
     }
 
-    @GetMapping("/project")
-    public String projectpage(){
-        return "form";
+    @GetMapping("/career")
+    public String career(){
+        return "career";
+    }
+
+    @GetMapping("/training")
+    public String training(){
+        return "training";
     }
 
     @GetMapping("/services")
     public String servicespage(){
         return "services";
+    }
+
+    @GetMapping("/communityservices")
+    public String communityservices(){
+        return "communityservices";
     }
 
     @GetMapping("/contact")
@@ -51,6 +61,12 @@ public class UserController {
         session.setAttribute("message","Your registration successful");
         return "redirect:/project";
     } 
+
+
+    @GetMapping("/project")
+    public String projectpage(){
+        return "form";
+    }
 
 
     @GetMapping("/test")
