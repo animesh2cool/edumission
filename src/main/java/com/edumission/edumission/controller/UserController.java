@@ -54,6 +54,66 @@ public class UserController {
         return "contact";
     }
 
+    @GetMapping("/btech")
+    public String btech(){
+        return "btech";
+    }
+
+    @GetMapping("/polytechnic")
+    public String polytechnic(){
+        return "polytechnic";
+    }
+
+    @GetMapping("/bca")
+    public String bca(){
+        return "bca";
+    }
+
+    @GetMapping("/mca")
+    public String mca(){
+        return "mca";
+    }
+
+    @GetMapping("/bba")
+    public String bba(){
+        return "bba";
+    }
+
+    @GetMapping("/mba")
+    public String mba(){
+        return "mba";
+    }
+
+    @GetMapping("/bpharm")
+    public String bpharm(){
+        return "bpharm";
+    }
+
+    @GetMapping("/dpharm")
+    public String dpharm(){
+        return "dpharm";
+    }
+
+    @GetMapping("/gnm")
+    public String gnm(){
+        return "gnm";
+    }
+
+    @GetMapping("/bscnurse")
+    public String bscnurse(){
+        return "bscnurse";
+    }
+
+    @GetMapping("/bscagri")
+    public String bscagri(){
+        return "bscagri";
+    }
+
+    @GetMapping("/enqueryform")
+    public String enqueryform(){
+        return "enqueryform";
+    }
+
     @PostMapping("/register")
     public String registerEseaForm(@ModelAttribute EseaForm esea, HttpSession session){
         System.out.println(esea);

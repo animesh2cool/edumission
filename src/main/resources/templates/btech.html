@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,7 +15,7 @@
     
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+        <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
         <a class="navbar-brand" href="/">EduMission</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,36 +74,69 @@
     <!-- end nav bar -->
 
     <!-- Page Content -->
-    <div class="container mt-4">
-        <h2>Our Services</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Service 1</h5>
-                        <p class="card-text">Description of service 1.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Service 2</h5>
-                        <p class="card-text">Description of service 2.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Service 3</h5>
-                        <p class="card-text">Description of service 3.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more services as needed -->
+  <div class="content container mt-4">
+    <div class="row">
+      <div class="col-md-8">
+        <!-- Main Content Area -->
+        
+        <h2>Bachelor in Technology</h2>
+        <p>A Bachelor of Technology (B.Tech) degree is an undergraduate academic program focused on engineering and technology. 
+            It typically spans four years and is designed to equip students with the technical knowledge and skills necessary for a career 
+            in engineering and related fields.</p>
+            <h3>Program Overview</h3>
+<ul>
+    <li><strong>Duration</strong>: 4 years, divided into 8 semesters.</li>
+    <li><strong>Curriculum</strong>: Includes a mix of theoretical and practical courses, laboratory work, projects, and internships.</li>
+</ul>
+<h3>Specializations</h3>
+<p>B.Tech programs offer a wide range of specializations, including but not limited to:</p>
+<ul>
+    <li><strong>Computer Science and Engineering (CSE)</strong></li>
+    <li><strong>Electronics and Communication Engineering (ECE)</strong></li>
+    <li><strong>Mechanical Engineering</strong></li>
+    <li><strong>Civil Engineering</strong></li>
+    <li><strong>Electrical Engineering</strong></li>
+    <li><strong>Information Technology</strong></li>
+    <li><strong>Biotechnology</strong></li>
+</ul>
+<h3>Career Prospects</h3>
+<ul>
+    <li><strong>Job Opportunities</strong>: Graduates can work in various sectors such as IT, manufacturing, telecommunications, construction, automotive, and more.</li>
+    <li><strong>Higher Studies</strong>: Opportunities for further education include pursuing a Master of Technology (M.Tech), Master of Science (MS), or Master of Business Administration (MBA).</li>
+    <li><strong>Entrepreneurship</strong>: Many B.Tech graduates also venture into entrepreneurship, starting their own tech companies or startups.</li>
+</ul>
+<h3>Course Fees :</h3>
+<ul style="list-style-type: disc;">
+    <li>For 4 Years: Starting from 2.3L</li>
+    <li>For 3 Years: Starting from 1.75L</li>
+</ul>
+<div class="container mt-4">
+    <!-- Apply Button -->
+    <a href="/enqueryform"><button class="btn btn-primary">Click Here to Apply</button></a>
+    <h1></h1>
+</div>
+      </div>
+      
+      <div class="col-md-4">
+        <!-- Sidebar -->
+        <div class="card">
+          <div class="card-body">
+            <ul class="list-group">
+              <img class="d-block w-100" src="btech.jpg" alt="First slide" style="width: 800px; height: 400px;">
+              <li class="list-group-item"><a href="/enqueryform">Click Here to Apply</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+    
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-">
+    <div class="container m-auto">
+      <span>&copy; 2024 Educational Website</span>
+    </div>
+  </footer>
   
     
 

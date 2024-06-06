@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,7 +15,7 @@
     
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+        <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
         <a class="navbar-brand" href="/">EduMission</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,36 +74,91 @@
     <!-- end nav bar -->
 
     <!-- Page Content -->
-    <div class="container mt-4">
-        <h2>Our Services</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Service 1</h5>
-                        <p class="card-text">Description of service 1.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Service 2</h5>
-                        <p class="card-text">Description of service 2.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Service 3</h5>
-                        <p class="card-text">Description of service 3.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more services as needed -->
+  <div class="content container mt-4">
+    <div class="row">
+      <div class="col-md-8">
+        <!-- Main Content Area -->
+        
+        <h2>B.Sc. in Agriculture</h2>
+        <p> Bachelor of Science (B.Sc) in Agriculture is an undergraduate degree program that focuses on agricultural science and technology. 
+            In West Bengal, this program is offered by various universities and colleges, 
+            aiming to provide students with the knowledge and skills required to address agricultural challenges 
+            and improve agricultural productivity.</p>
+            <h3>Program Overview</h3>
+<ul>
+    <li><strong>Duration</strong>: 4 years, divided into 8 semesters.</li>
+    <li><strong>Curriculum</strong>: Includes a mix of theoretical and practical courses, laboratory work, projects, and internships.</li>
+</ul>
+<h3>Admission Requirements</h3>
+<ul>
+    <li><strong>Eligibility</strong>:<ul>
+            <li>Completion of 10+2 (or equivalent) with Physics, Chemistry, Biology/Mathematics.</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Key Subjects and Curriculum</h3>
+<p>The B.Sc Agriculture program covers a wide range of subjects designed to provide comprehensive agricultural education. Key subjects include:</p>
+<ul>
+    <li><strong>Agronomy</strong>: Study of crops and the soils in which they grow.</li>
+    <li><strong>Horticulture</strong>: Study of garden management and cultivation.</li>
+    <li><strong>Plant Pathology</strong>: Study of plant diseases.</li>
+    <li><strong>Entomology</strong>: Study of insects and their impact on crops.</li>
+    <li><strong>Soil Science</strong>: Study of soil as a natural resource.</li>
+    <li><strong>Agricultural Economics</strong>: Study of economic principles applied to agriculture.</li>
+    <li><strong>Animal Husbandry</strong>: Study of livestock management.</li>
+    <li><strong>Agricultural Engineering</strong>: Application of engineering principles to agriculture.</li>
+    <li><strong>Biotechnology</strong>: Application of technology to biological processes in agriculture.</li>
+    <li><strong>Extension Education</strong>: Study of agricultural extension services and rural development.</li>
+</ul>
+
+<h3>Practical Training</h3>
+<ul>
+    <li><strong>Laboratory Work</strong>: Hands-on experience in various scientific techniques and experiments.</li>
+    <li><strong>Field Work</strong>: Practical training in crop cultivation, soil management, and other agricultural practices.</li>
+    <li><strong>Internships</strong>: Industrial and field internships to provide real-world exposure and experience.</li>
+</ul>
+<h3>Career Prospects</h3>
+<p>Graduates of B.Sc Agriculture have diverse career opportunities in both public and private sectors:</p>
+<ul>
+    <li><strong>Government Jobs</strong>: Agricultural officers, research scientists, extension officers in various state and central government departments.</li>
+    <li><strong>Private Sector</strong>: Roles in agribusiness firms, agrochemical companies, food processing industries, seed companies, and agricultural consultancies.</li>
+    <li><strong>Research and Development</strong>: Opportunities in research institutions and universities.</li>
+    <li><strong>Entrepreneurship</strong>: Starting own ventures in farming, agribusiness, and related fields.</li>
+    <li><strong>Higher Education</strong>: Pursuing M.Sc in Agriculture or related disciplines, or preparing for competitive exams like ICAR JRF, UPSC, etc.</li>
+</ul>
+
+<h3>Course Fees :</h3>
+<ul style="list-style-type: disc;">
+    <li>For 4 Years: Starting from 2.01L</li>
+</ul>
+<div class="container mt-4">
+    <!-- Apply Button -->
+    <a href="/enqueryform"><button class="btn btn-primary">Click Here to Apply</button></a>
+    <h1></h1>
+</div>
+      </div>
+      
+      <div class="col-md-4">
+        <!-- Sidebar -->
+        <div class="card">
+          <div class="card-body">
+            <ul class="list-group">
+              <img class="d-block w-100" src="agri.jpg" alt="First slide" style="width: 800px; height: 400px;">
+              <li class="list-group-item"><a href="/enqueryform">Click Here to Apply</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+    
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-">
+    <div class="container m-auto">
+      <span>&copy; 2024 Educational Website</span>
+    </div>
+  </footer>
   
     
 
